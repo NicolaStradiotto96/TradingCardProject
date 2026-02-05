@@ -1,0 +1,38 @@
+/* GENERAL SETTINGS */
+:root {
+    --color-p: rgb(31, 31, 31);
+    --color-s: rgb(235, 235, 235);
+    --color-a: rgb(238, 205, 89);
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+.title {
+    font-family: "Lugrasimo", cursive;
+}
+
+.color-p {
+    color: var(--color-p);
+}
+
+.color-s {
+    color: var(--color-s);
+}
+
+.color-a {
+    color: var(--color-a);
+}
+
+.bg-p {
+    background-color: var(--color-p);
+}
+
+.bg-s {
+    background-color: var(--color-s);
+}
+
+.bg-a {
+    background-color: var(--color-a);
+}
