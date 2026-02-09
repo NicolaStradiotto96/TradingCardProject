@@ -24,5 +24,5 @@ The goal is to create a safe, fast, and engaging marketplace for collectors and 
 
 ### FONTS
 
-- Titles: font-family: "Lugrasimo", cursive;
+- Titles: font-family: "Audiowide", sans-serif;
 - Text: font-family: "Rubik", sans-serif;

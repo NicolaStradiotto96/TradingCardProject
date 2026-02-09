@@ -1,6 +1,7 @@
 /* GENERAL SETTINGS */
 :root {
     --color-p: rgb(31, 31, 31);
+    --color-p2: rgb(15, 15, 15);
     --color-s: rgb(235, 235, 235);
     --color-a: rgb(238, 205, 89);
 }
@@ -10,7 +11,7 @@
 }
 
 .title {
-    font-family: "Lugrasimo", cursive;
+    font-family: "Audiowide", sans-serif;
 }
 
 .color-p {
@@ -29,10 +30,150 @@
     background-color: var(--color-p);
 }
 
+.bg-p2 {
+    background-color: var(--color-p2);
+}
+
 .bg-s {
     background-color: var(--color-s);
 }
 
 .bg-a {
     background-color: var(--color-a);
+}
+
+/* NAVBAR */
+.navbar {
+    height: 6rem;
+    transition: 0.5s;
+}
+
+.nav-logo {
+    width: 4rem;
+}
+
+.nav-link {
+    color: var(--color-s) !important;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+.nav-link.active {
+    color: white !important;
+}
+
+.navbar-icon {
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-icon:hover {
+    transform: scale(1.1);
+}
+
+.nav-scrolled {
+    background-color: rgba(31, 31, 31, 0.908);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 5px var(--color-s);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas.offcanvas-start {
+    top: 6rem;
+}
+
+.promo-bar {
+    top: 6rem;
+    height: 3rem;
+    transition: 0.5s;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+/* HEADER */
+.margin-navbar {
+    padding-top: 6rem;
+}
+
+.header-bg {
+    background-color: var(--color-a);
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23000000' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.carousel {
+    height: calc(70vh - 15rem);
+}
+
+.carousel-img {
+    height: calc(60vh - 15rem);
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+    .promo-bar {
+        top: 6rem;
+        height: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-wrapper {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar {
+        height: 8rem;
+    }
+
+    .nav-logo {
+        width: 6rem;
+    }
+
+    .promo-bar {
+        top: 8rem;
+        height: 2rem;
+    }
+
+    .margin-navbar {
+        padding-top: 9rem;
+    }
+
+    .carousel {
+        height: calc(100vh - 15rem);
+    }
+
+    .carousel-img {
+        height: calc(100vh - 15rem);
+    }
 }
