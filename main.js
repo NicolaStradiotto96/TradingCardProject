@@ -1,3 +1,5 @@
+AOS.init();
+
 let navbar = document.querySelector(".navbar");
 let promoBar = document.querySelector(".promo-bar");
 let btnClose = document.querySelector(".btn-close");

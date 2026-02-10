@@ -13,6 +13,8 @@ The goal is to create a safe, fast, and engaging marketplace for collectors and 
 - CSS
 - JavaScript
 - Bootstrap
+- Bootstrap Icons
+- AOS
 
 ## PROJECT SCAFFHOLDING
 
