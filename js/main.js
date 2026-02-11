@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnClose = document.querySelector(".btn-close");
 
     window.addEventListener("scroll", () => {
+        if (!navbar || !promoBar) return;
+
         if (window.scrollY > 200) {
             navbar.classList.add("nav-scrolled");
             promoBar.classList.add("nav-scrolled");
@@ -22,14 +24,49 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     // PROMO BAR
-    btnClose.addEventListener("click", () => {
-        promoBar.classList.add("d-none");
-    })
+    if (btnClose && promoBar) {
+        const carousel = document.querySelector(".carousel");
+        const carouselImg = document.querySelectorAll(".carousel-img");
+
+        btnClose.addEventListener("click", () => {
+            promoBar.classList.add("promo-hidden");
+            carousel.classList.add("remove-promo");
+            carouselImg.forEach((img) => {
+                img.classList.add("remove-promo");
+            });
+        })
+    }
+
+    // CATEGORIES
+    const categoriesWrapper = document.querySelector("#categories-wrapper");
+
+    if (categoriesWrapper) {
+        fetch("./data/cards.json").then((response) => response.json()).then((data) => {
+
+            data.forEach((category) => {
+                const div = document.createElement("div");
+                div.classList.add("col-12", "col-sm-7", "col-md-6", "col-lg-4", "col-xxl-3", "p-3", "p-md-5");
+                div.setAttribute("data-aos", "zoom-in-down");
+                div.setAttribute('data-aos-duration', '700');
+
+                div.innerHTML = `
+                    <a href="#" class="card-category d-flex justify-content-center align-items-center rounded-4">
+                        <img src="${category.icon}" alt="${category.name} Category" class="category-img p-3">
+                    </a>
+            `
+
+                categoriesWrapper.appendChild(div);
+            });
+
+            AOS.refresh();
+        })
+    }
+
 
     // STATS
     const animateCounter = (counter) => {
         let current = 0;
-        const target = counter.getAttribute('data-target');
+        const target = +counter.getAttribute('data-target');
         const startTime = Date.now();
         const duration = 2000;
 
@@ -44,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 counter.innerText = Math.floor(current).toLocaleString();
                 requestAnimationFrame(updateCounter);
             } else {
-                counter.innerText = target.toLocaleString() + '+';
+                counter.innerText = current.toLocaleString() + '+';
             }
         };
 

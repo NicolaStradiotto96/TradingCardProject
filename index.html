@@ -19,7 +19,7 @@
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 </head>
@@ -32,8 +32,8 @@
                 <button class="navbar-toggler me-2 ps-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <i class="bi bi-list align-middle display-3 color-s"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="media/logo.png" alt="Logo" class="nav-logo">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="media/logo.png" alt="Logo" class="nav-logo mx-2">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -59,9 +59,9 @@
             </div>
             <div class="fs-3">
                 <ul class="navbar-nav flex-row">
-                    <li class="navbar-icon"><a href=""><i class="bi bi-search color-s me-3"></a></i></li>
-                    <li class="navbar-icon"><a href=""><i class="bi bi-person color-s me-3"></a></i></li>
-                    <li class="navbar-icon"><a href=""><i class="bi bi-bag color-s"></a></i></li>
+                    <li class="navbar-icon"><a href=""><i class="bi bi-search color-s mx-2"></a></i></li>
+                    <li class="navbar-icon"><a href=""><i class="bi bi-person color-s mx-2"></a></i></li>
+                    <li class="navbar-icon"><a href=""><i class="bi bi-bag color-s mx-2"></a></i></li>
                 </ul>
             </div>
         </div>
@@ -99,13 +99,13 @@
     <!-- PROMO BAR -->
     <div class="promo-bar bg-p color-s position-sticky w-100 z-2">
         <hr class="m-0">
-        <div class="promo-container container-lg h-100">
+        <div class="container-lg h-100">
             <div class="row align-items-center justify-content-center h-100 px-3">
-                <div class="col-11 col-md-6">
+                <div class="col-11 col-md-6 px-0">
                     <strong>🚀 30% OFF this month! Code: PROMO30</strong>
                 </div>
-                <div class="col-1 col-md-4 text-center">
-                    <button class="btn-close btn-close-white"></button>
+                <div class="col-1 col-md-4 text-end px-0">
+                    <button class="btn-close btn-close-white "></button>
                 </div>
             </div>
         </div>
@@ -122,15 +122,15 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner" data-aos="fade-up" data-aos-duration="700">>
                 <div class="carousel-item active w-100">
-                    <img src="media/carousel-img-1.png" class="carousel-img d-block mx-auto" alt="...">
+                    <img src="media/carousel/img-1.png" class="carousel-img d-block mx-auto" alt="Pokèmon Bundle">
                 </div>
                 <div class="carousel-item">
-                    <img src="media/carousel-img-2.png" class="carousel-img d-block mx-auto" alt="...">
+                    <img src="media/carousel/img-2.png" class="carousel-img d-block mx-auto" alt="Magic Bundle">
                 </div>
                 <div class="carousel-item">
-                    <img src="media/carousel-img-3.png" class="carousel-img d-block mx-auto" alt="...">
+                    <img src="media/carousel/img-3.png" class="carousel-img d-block mx-auto" alt="Yu-Gi-Oh Bundle">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -150,25 +150,8 @@
         <!-- CATEGORIES -->
         <section class="mt-5 p-xl-5">
             <h2 class="title category-title text-center px-3">CATEGORIES</h2>
-            <div class="row justify-content-center align-items-center p-5 gx-0">
-                <div class="col-12 col-sm-7 col-md-6 col-lg-4 col-xl-3 p-3 p-md-5" data-aos="zoom-in-down"
-                    data-aos-duration="700">
-                    <a href="#" class="card-category d-flex justify-content-center align-items-center rounded-4">
-                        <img src="media/category-pokèmon.png" alt="Pokèmon Category" class="category-img p-3">
-                    </a>
-                </div>
-                <div class="col-12 col-sm-7 col-md-6 col-lg-4 col-xl-3 p-3 p-md-5" data-aos="zoom-in-down"
-                    data-aos-duration="700">
-                    <a href="#" class="card-category d-flex justify-content-center align-items-center rounded-4">
-                        <img src="media/category-magic.png" alt="Magic Category" class="category-img p-3">
-                    </a>
-                </div>
-                <div class="col-12 col-sm-7 col-md-6 col-lg-4 col-xl-3 p-3 p-md-5" data-aos="zoom-in-down"
-                    data-aos-duration="700">
-                    <a href="#" class="card-category d-flex justify-content-center align-items-center rounded-4">
-                        <img src="media/category-yugioh.png" alt="Yu-Gi-Oh Category" class="category-img p-3">
-                    </a>
-                </div>
+            <div class="row justify-content-center align-items-center p-5 gx-0" id="categories-wrapper">
+                <!-- CARDS CONTENT VIA JS -->
             </div>
         </section>
         <!-- STATS -->
@@ -221,7 +204,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <!-- MY JS -->
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

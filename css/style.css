@@ -91,14 +91,20 @@
     top: 6rem;
 }
 
+/* PROMO BAR */
 .promo-bar {
     top: 6rem;
-    height: 3rem;
-    transition: 0.5s;
+    height: 4rem;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
 }
 
 .btn-close:focus {
     box-shadow: none;
+}
+
+.promo-hidden {
+    height: 0 !important;
 }
 
 /* HEADER */
@@ -119,14 +125,20 @@
 }
 
 .carousel {
-    height: calc(70vh - 16rem);
+    height: calc(80vh - 16rem);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .carousel-img {
-    height: calc(60vh - 16rem);
+    height: calc(80vh - 16rem);
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.remove-promo {
+    height: calc(80vh - 12rem);
 }
 
 .carousel-control-prev-icon,
@@ -148,15 +160,17 @@
 }
 
 .card-category {
-    border: 1px solid var(--color-a);
+    border: 2px solid var(--color-s);
     aspect-ratio: 1/0.7;
-    background-color: rgb(45, 45, 45);
-    transition: 0.5s;
+    background: linear-gradient(var(--color-p) 0%, var(--color-s) 50%, var(--color-p) 100%);
+    background-size: 100% 200%;
+    background-position: bottom center;
+    transition: background-position 0.5s ease, border 0.5s ease;
 }
 
 .card-category:hover {
-    border: 1px solid var(--color-s);
-    background-color: rgba(238, 206, 89, 0.825);
+    border: 2px solid var(--color-a);
+    background-position: top center;
 }
 
 .category-img {
@@ -187,19 +201,6 @@
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 500px) {
-    .promo-bar {
-        top: 6rem;
-        height: 4rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .nav-wrapper {
-        width: 50% !important;
-    }
-}
-
 @media (min-width: 576px) {
     .navbar {
         height: 6rem;
@@ -220,5 +221,21 @@
 
     .carousel-img {
         height: calc(100vh - 16rem);
+    }
+
+    .remove-promo {
+        height: calc(100vh - 14rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-wrapper {
+        width: 60% !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .nav-wrapper {
+        width: 50% !important;
     }
 }
