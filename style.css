@@ -156,7 +156,7 @@
 
 .card-category:hover {
     border: 1px solid var(--color-s);
-    background-color:rgba(238, 206, 89, 0.825);
+    background-color: rgba(238, 206, 89, 0.825);
 }
 
 .category-img {
@@ -165,11 +165,22 @@
     object-fit: contain;
 }
 
+/* FOOTER */
+.footer-hr {
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right,
+            transparent,
+            var(--color-s),
+            transparent);
+}
+
 /* KEYFRAMES */
 @keyframes shadow {
     0% {
         text-shadow: 2px 2px 10px var(--color-p), -2px -2px 10px var(--color-p);
     }
+
     100% {
         text-shadow: 2px 2px 30px var(--color-p), -2px -2px 30px var(--color-p);
     }
