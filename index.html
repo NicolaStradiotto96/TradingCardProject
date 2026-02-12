@@ -25,86 +25,16 @@
 </head>
 
 <body class="bg-p">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-p position-fixed top-0 w-100 z-3 navbar-dark ">
-        <div class="nav-wrapper w-100 mx-auto d-flex align-items-center justify-content-between px-3">
-            <div>
-                <button class="navbar-toggler me-2 ps-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                    <i class="bi bi-list align-middle display-3 color-s"></i>
-                </button>
-                <a class="navbar-brand m-0" href="index.html">
-                    <img src="media/logo.png" alt="Logo" class="nav-logo mx-2">
-                </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mx-auto fs-5 fw-bold">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Categories
-                        </a>
-                        <ul class="dropdown-menu categories-dropdown text-center py-0">
-                            <!-- CATEGORIES CONTENT VIA JS -->
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="fs-3">
-                <ul class="navbar-nav flex-row">
-                    <li class="navbar-icon"><a href=""><i class="bi bi-search color-s mx-2"></a></i></li>
-                    <li class="navbar-icon"><a href=""><i class="bi bi-person color-s mx-2"></a></i></li>
-                    <li class="navbar-icon"><a href=""><i class="bi bi-bag color-s mx-2"></a></i></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- OFFCANVAS NAVBAR -->
-    <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
-        <div class="offcanvas-body bg-p">
-            <div class="container bg-p2 rounded">
-                <ul class="navbar-nav fs-5 fw-bold">
-                    <hr class="mt-0">
-                    <li class="nav-item text-center d-flex justify-content-center">
-                        <a class="nav-link active w-50" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <hr class="color-s">
-                    <li class="nav-item dropdown text-center d-flex flex-column align-items-center">
-                        <a class="nav-link w-50" href="#categories" id="categories-navbar">
-                            Categories
-                        </a>
-                        <ul class="categories-dropdown list-unstyled">
-                            <!-- CATEGORIES CONTENT VIA JS -->
-                        </ul>
-                    </li>
-                    <hr class="color-s">
-                    <li class="nav-item text-center d-flex justify-content-center">
-                        <a class="nav-link w-50" aria-current="page" href="contacts.html">Contacts</a>
-                    </li>
-                    <hr class="mb-0">
-                </ul>
-            </div>
-        </div>
+    <!-- NAVBAR + OFFCANVAS NAVBAR -->
+    <div class="navbar-placeholder">
+        <!-- NAVBAR + OFFCANVAS NAVBAR CONTENT VIA LAYOUT.JS -->
     </div>
+
     <!-- PROMO BAR -->
-    <div class="promo-bar bg-p color-s position-sticky w-100 z-2">
-        <hr class="m-0">
-        <div class="container-lg h-100">
-            <div class="row align-items-center justify-content-center h-100 px-3">
-                <div class="col-11 col-md-6 px-0">
-                    <strong>🚀 30% OFF this month! Code: PROMO30</strong>
-                </div>
-                <div class="col-1 col-md-4 text-end px-0">
-                    <button class="btn-close btn-close-white "></button>
-                </div>
-            </div>
-        </div>
+    <div class="promobar-placeholder">
+        <!-- PROMO BAR CONTENT VIA LAYOUT.JS -->
     </div>
+
     <!-- HEADER -->
     <header class="header-bg">
         <h1 class="title header-title text-center px-3 margin-navbar">Trading Card Website</h1>
@@ -170,28 +100,10 @@
     </main>
     <!-- FOOTER -->
     <hr class="footer-hr m-0">
-    <footer>
-        <div class="container d-flex flex-wrap justify-content-between align-items-center py-4">
-            <div class="col-8 col-md-4 d-flex align-items-center">
-                <a href="index.html" class="me-2 mb-md-0 color-s text-decoration-none lh-1" aria-label="Bootstrap">
-                    <img src="media/logo.png" alt="Logo" class="nav-logo">
-                </a>
-                <span class="mb-md-0 color-s">© <span id="current-year"></span> Trading Card Website</span>
-            </div>
-            <ul class="nav col-4 list-unstyled d-flex justify-content-end align-items-center">
-                <li class="footer-icon ms-3">
-                    <a class="color-s" href="#" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </li>
-                <li class="footer-icon ms-3">
-                    <a class="color-s" href="#" aria-label="TikTok">
-                        <i class="bi bi-tiktok"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+    <div class="footer-placeholder">
+        <!-- FOOTER CONTENT VIA LAYOUT.JS -->
+    </div>
+
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- BOOTSTRAP JS -->
@@ -199,6 +111,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <!-- MY JS -->
+    <script src="js/layout.js"></script>
     <script src="js/main.js"></script>
 </body>
 
