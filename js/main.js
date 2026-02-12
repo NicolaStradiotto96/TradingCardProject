@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const promoBar = document.querySelector(".promo-bar");
     const btnClose = document.querySelector(".btn-close");
 
+
     window.addEventListener("scroll", () => {
         if (!navbar || !promoBar) return;
 
@@ -21,6 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove("nav-scrolled");
             promoBar.classList.remove("nav-scrolled");
         }
+    })
+
+    // MOBILE NAVBAR
+    const categoriesNavbar = document.querySelector("#categories-navbar");
+    const offcanvasNavbar = document.querySelector("#offcanvasNavbar");
+
+    categoriesNavbar.addEventListener("click", () => {
+        const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasNavbar);
+        bsOffcanvas.hide();
     })
 
     // PROMO BAR
@@ -38,30 +48,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // CATEGORIES
-    const categoriesWrapper = document.querySelector("#categories-wrapper");
+    fetch("./data/cards.json").then((response) => response.json()).then((data) => {
+        const categoriesDropdown = document.querySelectorAll(".categories-dropdown");
+        const categoriesWrapper = document.querySelector("#categories-wrapper");
 
-    if (categoriesWrapper) {
-        fetch("./data/cards.json").then((response) => response.json()).then((data) => {
+        data.forEach((category) => {
+            categoriesDropdown.forEach((dropdown) => {
+                const li = document.createElement("li");
+                li.classList.add("nav-link");
+                li.innerHTML = `
+                    <a class="dropdown-item" href="category-${category.url}.html">${category.name}</a>
+                `;
 
-            data.forEach((category) => {
-                const div = document.createElement("div");
-                div.classList.add("col-12", "col-sm-7", "col-md-6", "col-lg-4", "col-xxl-3", "p-3", "p-md-5");
-                div.setAttribute("data-aos", "zoom-in-down");
-                div.setAttribute('data-aos-duration', '700');
+                dropdown.appendChild(li);
+            })
 
-                div.innerHTML = `
+            const div = document.createElement("div");
+            div.classList.add("col-12", "col-sm-7", "col-md-6", "col-lg-4", "col-xxl-3", "p-3", "p-md-5");
+            div.setAttribute("data-aos", "zoom-in-down");
+            div.setAttribute('data-aos-duration', '700');
+
+            div.innerHTML = `
                     <a href="#" class="card-category d-flex justify-content-center align-items-center rounded-4">
                         <img src="${category.icon}" alt="${category.name} Category" class="category-img p-3">
                     </a>
-            `
+            `;
 
-                categoriesWrapper.appendChild(div);
-            });
+            categoriesWrapper.appendChild(div);
+        });
 
-            AOS.refresh();
-        })
-    }
-
+        AOS.refresh();
+    })
 
     // STATS
     const animateCounter = (counter) => {
@@ -91,14 +108,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                const countersInView = entry.target.querySelectorAll('.counter');
-                countersInView.forEach(animateCounter);
+                animateCounter(entry.target);
                 observer.unobserve(entry.target);
             }
         });
+    }, {
+        threshold: 0.9
     });
 
-    observer.observe(document.querySelector('.stats'));
+    const allCounters = document.querySelectorAll('.counter');
+    allCounters.forEach(counter => {
+        observer.observe(counter);
+    });
 
     // FOOTER
     const spanYear = document.getElementById('current-year');

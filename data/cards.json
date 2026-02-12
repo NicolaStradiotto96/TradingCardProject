@@ -1,6 +1,7 @@
 [
     {
         "name": "Pokémon",
+        "url": "pokemon",
         "icon": "../media/categories/pokemon.png",
         "cards": [
             {
@@ -47,6 +48,7 @@
     },
     {
         "name": "Magic: The Gathering",
+        "url": "magic",
         "icon": "../media/categories/magic.png",
         "cards": [
             {
@@ -93,6 +95,7 @@
     },
     {
         "name": "Yu-Gi-Oh!",
+        "url": "yugioh",
         "icon": "../media/categories/yugioh.png",
         "cards": [
             {
@@ -139,6 +142,7 @@
     },
     {
         "name": "Disney Lorcana",
+        "url": "lorcana",
         "icon": "../media/categories/lorcana.png",
         "cards": [
             {
@@ -185,6 +189,7 @@
     },
     {
         "name": "One Piece",
+        "url": "onepiece",
         "icon": "../media/categories/onepiece.png",
         "cards": [
             {
@@ -231,6 +236,7 @@
     },
     {
         "name": "Digimon",
+        "url": "digimon",
         "icon": "../media/categories/digimon.png",
         "cards": [
             {
@@ -277,6 +283,7 @@
     },
     {
         "name": "Dragon Ball",
+        "url": "dragonball",
         "icon": "../media/categories/dragonball.png",
         "cards": [
             {
@@ -323,6 +330,7 @@
     },
     {
         "name": "Riftbound",
+        "url": "riftbound",
         "icon": "../media/categories/riftbound.png",
         "cards": [
             {
