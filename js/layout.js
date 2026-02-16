@@ -147,7 +147,6 @@ let promoBar;
 if (promobarPlaceholder) {
     promobarPlaceholder.innerHTML = `
         <div class="promo-bar bg-p color-s position-fixed w-100 z-2">
-            <hr class="m-0">
             <div class="container-lg h-100">
                 <div class="row align-items-center justify-content-center h-100 px-3">
                     <div class="col-11 col-md-6 px-0">

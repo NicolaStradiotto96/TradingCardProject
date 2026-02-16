@@ -5,45 +5,45 @@
         "icon": "../media/categories/pokemon.png",
         "cards": [
             {
-                "id": 1,
-                "name": "Pikachu VMAX",
-                "image": "https://images.pokemontcg.io/swsh3/44.png",
-                "price": 45.99,
-                "quantity": 12,
-                "rarity": "Ultra Rare"
-            },
-            {
-                "id": 2,
-                "name": "Charizard VSTAR",
-                "image": "https://images.pokemontcg.io/swsh9/185.png",
-                "price": 89.50,
-                "quantity": 3,
-                "rarity": "Secret Rare"
-            },
-            {
-                "id": 3,
-                "name": "Umbreon VMAX",
-                "image": "https://images.pokemontcg.io/swsh3/190.png",
-                "price": 32.00,
-                "quantity": 8,
-                "rarity": "Ultra Rare"
-            },
-            {
-                "id": 4,
-                "name": "Lugia VSTAR",
-                "image": "https://images.pokemontcg.io/swsh11/152.png",
-                "price": 65.75,
-                "quantity": 5,
-                "rarity": "Ultra Rare"
-            },
-            {
-                "id": 5,
-                "name": "Rayquaza VMAX",
-                "image": "https://images.pokemontcg.io/swsh4/168.png",
-                "price": 110.00,
-                "quantity": 2,
-                "rarity": "Rainbow Rare"
-            }
+        "id": 1,
+        "name": "Pikachu VMAX",
+        "image": "https://images.pokemontcg.io/swsh4/44.png",
+        "price": 45.99,
+        "quantity": 12,
+        "rarity": "Ultra Rare"
+    },
+    {
+        "id": 2,
+        "name": "Charizard VSTAR",
+        "image": "https://images.pokemontcg.io/swsh9/18.png",
+        "price": 89.50,
+        "quantity": 3,
+        "rarity": "Secret Rare"
+    },
+    {
+        "id": 3,
+        "name": "Umbreon VMAX",
+        "image": "https://images.pokemontcg.io/swsh7/95.png",
+        "price": 32.00,
+        "quantity": 8,
+        "rarity": "Ultra Rare"
+    },
+    {
+        "id": 4,
+        "name": "Lugia VSTAR",
+        "image": "https://images.pokemontcg.io/swsh12/139_hires.png",
+        "price": 65.75,
+        "quantity": 5,
+        "rarity": "Ultra Rare"
+    },
+    {
+        "id": 5,
+        "name": "Rayquaza VMAX",
+        "image": "https://images.pokemontcg.io/swsh7/218.png",
+        "price": 110.20,
+        "quantity": 2,
+        "rarity": "Rainbow Rare"
+    }
         ]
     },
     {

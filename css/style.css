@@ -5,6 +5,7 @@
     --color-s: rgb(235, 235, 235);
     --color-s2: rgb(255, 255, 255);
     --color-a: rgb(238, 205, 89);
+    --color-a2: rgb(255, 235, 89);
 }
 
 * {
@@ -136,7 +137,8 @@
     background-color: var(--color-p2);
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     color: var(--color-p) !important;
     background-color: var(--color-s);
 }
@@ -173,6 +175,8 @@
     height: 4rem;
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     overflow: hidden;
+    border-top: 1px solid var(--color-s);
+    border-bottom: 1px solid var(--color-s);
 }
 
 .btn-close:focus {
@@ -196,7 +200,7 @@
 .header-title {
     color: var(--color-s2);
     font-weight: bold;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2.2rem, 5vw, 4rem);
     animation: shadow 2s infinite alternate;
 }
 
@@ -236,7 +240,7 @@
 .category-title {
     color: var(--color-s2);
     font-weight: bold;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2.2rem, 5vw, 4rem);
 }
 
 .card-category {
@@ -245,11 +249,12 @@
     background: linear-gradient(var(--color-p) 0%, var(--color-s) 50%, var(--color-p) 100%);
     background-size: 100% 200%;
     background-position: bottom center;
-    transition: background-position 0.5s ease, border 0.5s ease;
+    transition: 0.5s ease, border 0.5s ease;
 }
 
 .card-category:hover {
     border: 2px solid var(--color-a);
+    box-shadow: 0 0 15px var(--color-a);
     background-position: top center;
 }
 
@@ -263,6 +268,38 @@
 .counter {
     display: block;
     min-height: 1.2em;
+}
+
+/* CATEGORY PAGE */
+.filters-title {
+    color: var(--color-s2);
+    font-weight: bold;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+.card-filter {
+    width: 50%;
+}
+
+.card {
+    width: 13rem;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px var(--color-a);
+}
+
+.card-border {
+    border: 2px solid var(--color-a) !important;
+}
+
+.btn-cart {
+    background-color: var(--color-a);
+}
+
+.btn-cart:hover, .btn-cart:focus {
+    background-color: var(--color-a2) !important;
 }
 
 /* FOOTER */
@@ -322,6 +359,10 @@
 @media (min-width: 992px) {
     .nav-wrapper {
         width: 60% !important;
+    }
+
+    .card-filter {
+        width: 100%;
     }
 }
 
