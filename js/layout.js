@@ -135,6 +135,8 @@ if (navbarPlaceholder) {
         const categoriesNavbar = navbarPlaceholder.querySelector("#categories-navbar");
 
         categoriesNavbar.addEventListener("click", () => {
+            const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasNavbar);
+
             bsOffcanvas.hide();
         })
     }

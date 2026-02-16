@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h5 class="card-title color-s">${card.name}</h5>
                         <p class="card-text m-0 color-s">${card.rarity}</p>
                         <p class="card-text m-0 color-s">${card.price.toFixed(2)}€</p>
-                        <p class="card-text text-secondary">${card.quantity} in stock</p>
+                    ${card.quantity == 0
+                        ? `<p class="card-text text-danger">${card.quantity} in stock</p>`
+                        : `<p class="card-text text-secondary">${card.quantity} in stock</p>`
+                    }
                         <a href="#" class="btn btn-cart">Add to cart
                             <i class="bi bi-cart"></i>
                         </a>
@@ -45,41 +48,68 @@ document.addEventListener('DOMContentLoaded', () => {
         priceFilter.value = maxPrice;
         priceLabel.innerHTML = `Max Price: ${parseFloat(maxPrice).toFixed(2)} €`;
 
-        function priceFilterCards() {
-            categoriesWrapper.innerHTML = "";
+        function priceFilterCards(array) {
+            let filtered = array.filter((card) => card.price <= priceFilter.value)
 
-            let filtered = pokemonCards.filter((card) => card.price <= priceFilter.value)
-
-            if (filtered.length === 0) {
-                categoriesWrapper.innerHTML = `
-                    <div class="col-12 text-center mt-5">
-                        <h4 class="color-s">No cards found under ${parseFloat(priceFilter.value).toFixed(2)}€</h4>
-                        <p class="text-secondary">Try increasing the price limit.</p>
-                    </div>
-                `;
-            } else {
-                createCards(filtered);
-            }
+            return filtered;
         }
 
         priceFilter.addEventListener("change", () => {
-            priceFilterCards();
             priceLabel.innerHTML = `Max Price: ${parseFloat(priceFilter.value).toFixed(2)} €`;
+            globalFilter();
         });
 
         // WORD FILTER
         let wordFilter = document.querySelector("#word-filter");
 
-        function wordFilterCards() {
-            categoriesWrapper.innerHTML = "";
+        function wordFilterCards(array) {
+            let filtered = array.filter((card) => card.name.toLowerCase().includes(wordFilter.value.toLowerCase()));
 
-            let filtered = pokemonCards.filter((card) => card.name.toLowerCase().includes(wordFilter.value));
-
-            createCards(filtered);
+            return filtered;
         }
 
         wordFilter.addEventListener("input", () => {
-            wordFilterCards();
+            globalFilter();
         })
+
+        // AVAILABLE FILTER
+        let availableFilter = document.querySelector("#available-filter");
+
+
+        function availableFilterCards(array) {
+            let filtered = array.filter((card) => {
+                if (availableFilter.checked) {
+                    return card.quantity > 0;
+                }
+
+                return array;
+            });
+
+            return filtered;
+        }
+
+        availableFilter.addEventListener("click", () => {
+            globalFilter();
+
+        })
+
+        // GLOBAL FILTER
+        function globalFilter() {
+            categoriesWrapper.innerHTML = "";
+
+            let filteredPrice = priceFilterCards(pokemonCards);
+            let filteredWord = wordFilterCards(filteredPrice);
+            let filteredAvailable = availableFilterCards(filteredWord);
+
+            if (filteredAvailable.length === 0) {
+                categoriesWrapper.innerHTML = `
+            <div class="text-center col-12 mx-4 mt-5">
+                <h4 class="color-s">No cards match your search</h4>
+                <p class="text-secondary">Try adjusting your filters.</p>
+            </div>`;
+            } else {
+                createCards(filteredAvailable);
+            }
+        }
     })
 });

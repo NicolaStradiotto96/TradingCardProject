@@ -24,7 +24,7 @@
         "id": 3,
         "name": "Umbreon VMAX",
         "image": "https://images.pokemontcg.io/swsh7/95.png",
-        "price": 32.00,
+        "price": 32.10,
         "quantity": 8,
         "rarity": "Ultra Rare"
     },
@@ -41,7 +41,7 @@
         "name": "Rayquaza VMAX",
         "image": "https://images.pokemontcg.io/swsh7/218.png",
         "price": 110.20,
-        "quantity": 2,
+        "quantity": 0,
         "rarity": "Rainbow Rare"
     }
         ]

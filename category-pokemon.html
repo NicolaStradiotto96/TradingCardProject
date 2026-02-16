@@ -39,8 +39,8 @@
 
     <!-- MAIN -->
     <main>
-        <section class="pt-0 p-lg-5 pt-lg-0">
-            <div class="margin-navbar row">
+        <section class="cards-category pb-5 p-lg-5 pt-lg-0">
+            <div class="margin-navbar row m-0">
                 <!-- FILTERS -->
                 <div class="col-12 col-lg-2 justify-content-center align-items-baseline pt-0 gx-0">
                     <h3 class="title filters-title text-center px-2">FILTERS</h3>
@@ -52,16 +52,20 @@
                     </div>
                     <!-- WORD FILTER -->
                     <div class="d-flex flex-column justify-content-center align-items-center my-5">
-                        <label class="color-s mb-2" for="word-filter">Search</label>
-                        <input type="text" class="card-filter form-control" id="word-filter"
-                            placeholder="E.g. Pikachu VMAX">
+                        <label class="color-s mb-2" for="word-filter">Search Your Card</label>
+                        <input type="text" class="card-filter form-control" id="word-filter" placeholder="Type here">
+                    </div>
+                    <!-- AVAILABLE FILTER -->
+                    <div class="d-flex flex-column justify-content-center align-items-center my-5">
+                        <label class="color-s" for="available-filter">Only Available</label>
+                        <input type="checkbox" class="form-check-input" id="available-filter">
                     </div>
                 </div>
                 <!-- CARDS -->
-                <div class="col-12 col-lg-10 row justify-content-center align-items-center pt-0 gx-0">
+                <div class="col-12 col-lg-10 pt-0 gx-0">
                     <h1 class="title category-title text-center px-2">CARDS</h1>
-                    <!-- CARDS CONTENT VIA JS -->
-                    <div class="row justify-content-center align-items-center p-5 pt-0 gx-0" id="categories-wrapper">
+                    <div class="row justify-content-center align-items-center px-5 py-0 gx-0" id="categories-wrapper">
+                        <!-- CARDS CONTENT VIA JS -->
                     </div>
                 </div>
             </div>

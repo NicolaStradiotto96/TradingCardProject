@@ -234,7 +234,7 @@
 
 /* CATEGORIES */
 #categories {
-    scroll-margin-top: 13rem;
+    scroll-margin-top: 10rem;
 }
 
 .category-title {
@@ -279,6 +279,10 @@
 
 .card-filter {
     width: 50%;
+}
+
+.cards-category {
+    min-height: 46rem;
 }
 
 .card {
