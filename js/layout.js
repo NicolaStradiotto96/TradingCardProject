@@ -21,7 +21,7 @@ if (navbarPlaceholder) {
                                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#categories" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link dropdown-toggle" href="index.html#categories""
                                     aria-expanded="false">
                                     Categories
                                     <span class="dropdown-arrow fw-normal">></span>
@@ -54,7 +54,7 @@ if (navbarPlaceholder) {
                             </li>
                             <hr class="color-s">
                             <li class="nav-item dropdown text-center d-flex flex-column align-items-center">
-                                <a class="nav-link w-50" href="#categories" id="categories-navbar">
+                                <a class="nav-link w-50" href="index.html#categories" id="categories-navbar">
                                     Categories
                                 </a>
                                 <ul class="categories-dropdown list-unstyled">

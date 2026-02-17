@@ -5,45 +5,45 @@
         "icon": "../media/categories/pokemon.png",
         "cards": [
             {
-        "id": 1,
-        "name": "Pikachu VMAX",
-        "image": "https://images.pokemontcg.io/swsh4/44.png",
-        "price": 45.99,
-        "quantity": 12,
-        "rarity": "Ultra Rare"
-    },
-    {
-        "id": 2,
-        "name": "Charizard VSTAR",
-        "image": "https://images.pokemontcg.io/swsh9/18.png",
-        "price": 89.50,
-        "quantity": 3,
-        "rarity": "Secret Rare"
-    },
-    {
-        "id": 3,
-        "name": "Umbreon VMAX",
-        "image": "https://images.pokemontcg.io/swsh7/95.png",
-        "price": 32.10,
-        "quantity": 8,
-        "rarity": "Ultra Rare"
-    },
-    {
-        "id": 4,
-        "name": "Lugia VSTAR",
-        "image": "https://images.pokemontcg.io/swsh12/139_hires.png",
-        "price": 65.75,
-        "quantity": 5,
-        "rarity": "Ultra Rare"
-    },
-    {
-        "id": 5,
-        "name": "Rayquaza VMAX",
-        "image": "https://images.pokemontcg.io/swsh7/218.png",
-        "price": 110.20,
-        "quantity": 0,
-        "rarity": "Rainbow Rare"
-    }
+                "id": 1,
+                "name": "Pikachu VMAX",
+                "image": "https://images.pokemontcg.io/swsh4/44.png",
+                "price": 45.99,
+                "quantity": 12,
+                "rarity": "Ultra Rare"
+            },
+            {
+                "id": 2,
+                "name": "Charizard VSTAR",
+                "image": "https://images.pokemontcg.io/swsh9/18.png",
+                "price": 89.50,
+                "quantity": 3,
+                "rarity": "Secret Rare"
+            },
+            {
+                "id": 3,
+                "name": "Umbreon VMAX",
+                "image": "https://images.pokemontcg.io/swsh7/95.png",
+                "price": 32.10,
+                "quantity": 8,
+                "rarity": "Ultra Rare"
+            },
+            {
+                "id": 4,
+                "name": "Lugia VSTAR",
+                "image": "https://images.pokemontcg.io/swsh12/139_hires.png",
+                "price": 65.75,
+                "quantity": 5,
+                "rarity": "Ultra Rare"
+            },
+            {
+                "id": 5,
+                "name": "Rayquaza VMAX",
+                "image": "https://images.pokemontcg.io/swsh7/218.png",
+                "price": 110.20,
+                "quantity": 0,
+                "rarity": "Rainbow Rare"
+            }
         ]
     },
     {
@@ -54,7 +54,7 @@
             {
                 "id": 6,
                 "name": "Black Lotus",
-                "image": "https://cardsrealm.com/img/cards/en/alpha/black-lotus.jpg",
+                "image": "https://cards.scryfall.io/large/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg",
                 "price": 25000.00,
                 "quantity": 1,
                 "rarity": "Reserved List"
@@ -62,7 +62,7 @@
             {
                 "id": 7,
                 "name": "Mana Crypt",
-                "image": "https://cardsrealm.com/img/cards/en/ema/mana-crypt.jpg",
+                "image": "https://cards.scryfall.io/large/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg",
                 "price": 180.75,
                 "quantity": 5,
                 "rarity": "Mythic Rare"
@@ -70,23 +70,23 @@
             {
                 "id": 8,
                 "name": "Timetwister",
-                "image": "https://cardsrealm.com/img/cards/en/ema/timetwister.jpg",
+                "image": "https://cards.scryfall.io/large/front/f/b/fbee1e10-0b8c-44ea-b0e5-44cdd0bfcd76.jpg",
                 "price": 4200.00,
                 "quantity": 1,
                 "rarity": "Reserved List"
             },
             {
                 "id": 9,
-                "name": "Jeweled Lotus",
-                "image": "https://cardsrealm.com/img/cards/en/cmr/jeweled-lotus.jpg",
-                "price": 95.50,
-                "quantity": 7,
-                "rarity": "Mythic Rare"
+                "name": "Gaea's Cradle",
+                "image": "https://api.scryfall.com/cards/25b0b816-0583-44aa-9dc5-f3ff48993a51?format=image&version=large",
+                "price": 900.00,
+                "quantity": 1,
+                "rarity": "Rare"
             },
             {
                 "id": 10,
                 "name": "The One Ring",
-                "image": "https://cardsrealm.com/img/cards/en/ltr/the-one-ring.jpg",
+                "image": "https://cards.scryfall.io/large/front/d/5/d5806e68-1054-458e-866d-1f2470f682b2.jpg",
                 "price": 85.00,
                 "quantity": 4,
                 "rarity": "Mythic Rare"
@@ -101,7 +101,7 @@
             {
                 "id": 11,
                 "name": "Blue-Eyes White Dragon",
-                "image": "https://images.yugiohcardguide.com/images/blue_eyes_white_dragon_led2_en_001.jpg",
+                "image": "https://images.ygoprodeck.com/images/cards/89631139.jpg",
                 "price": 15.99,
                 "quantity": 20,
                 "rarity": "Ultra Rare"
@@ -109,7 +109,7 @@
             {
                 "id": 12,
                 "name": "Exodia the Forbidden One",
-                "image": "https://images.yugiohcardguide.com/images/exodia_the_forbidden_one_bpw2_en_001.jpg",
+                "image": "https://images.ygoprodeck.com/images/cards/33396948.jpg",
                 "price": 120.00,
                 "quantity": 2,
                 "rarity": "Secret Rare"
@@ -117,26 +117,26 @@
             {
                 "id": 13,
                 "name": "Dark Magician",
-                "image": "https://images.yugiohcardguide.com/images/dark_magician_mfc_001.jpg",
+                "image": "https://images.ygoprodeck.com/images/cards/46986414.jpg",
                 "price": 22.50,
                 "quantity": 15,
                 "rarity": "Ultra Rare"
             },
             {
                 "id": 14,
-                "name": "Ash Blossom",
-                "image": "https://images.yugiohcardguide.com/images/ash_blossom_and_joyous_spring_wp18_jp_001.jpg",
+                "name": "Ash Blossom & Joyous Spring",
+                "image": "https://images.ygoprodeck.com/images/cards/14558127.jpg",
                 "price": 8.75,
                 "quantity": 25,
                 "rarity": "Ultra Rare"
             },
             {
-                "id": 15,
-                "name": "Apollousa",
-                "image": "https://images.yugiohcardguide.com/images/apollousa_bow_of_the_goddess_psv_001.jpg",
-                "price": 45.00,
-                "quantity": 6,
-                "rarity": "Secret Rare"
+                "id": 17,
+                "name": "Pot of Greed",
+                "image": "https://images.ygoprodeck.com/images/cards/55144522.jpg",
+                "price": 5.00,
+                "quantity": 50,
+                "rarity": "Rare"
             }
         ]
     },
@@ -147,43 +147,43 @@
         "cards": [
             {
                 "id": 16,
-                "name": "Mufasa - Champion King",
-                "image": "https://lorcana.gg/images/cards/042_001.png",
-                "price": 65.00,
-                "quantity": 4,
+                "name": "Mufasa - Ruler of Pride Rock",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/559156_in_1000x1000.jpg",
+                "price": 45.50,
+                "quantity": 5,
                 "rarity": "Legendary"
             },
             {
                 "id": 17,
-                "name": "Elsa - Snow Queen",
-                "image": "https://lorcana.gg/images/cards/007_078.png",
-                "price": 28.99,
-                "quantity": 9,
-                "rarity": "Enchanted Rare"
+                "name": "Clarabelle - Light on Her Hooves",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/561959_in_1000x1000.jpg",
+                "price": 38.00,
+                "quantity": 3,
+                "rarity": "Legendary"
             },
             {
                 "id": 18,
-                "name": "Simba - Future King",
-                "image": "https://lorcana.gg/images/cards/042_009.png",
-                "price": 35.50,
+                "name": "Vanellope von Schweetz - Sugar Rush Champ",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/561992_in_1000x1000.jpg",
+                "price": 12.50,
                 "quantity": 7,
-                "rarity": "Super Rare"
+                "rarity": "Legendary"
             },
             {
                 "id": 19,
-                "name": "Maleficent - Mistress of Evil",
-                "image": "https://lorcana.gg/images/cards/001_078.png",
-                "price": 42.00,
-                "quantity": 5,
-                "rarity": "Rare"
+                "name": "King Candy - Sweet Abomination",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/561995_in_1000x1000.jpg",
+                "price": 8.20,
+                "quantity": 10,
+                "rarity": "Super Rare"
             },
             {
                 "id": 20,
-                "name": "Mickey Mouse - Wayward Sorcerer",
-                "image": "https://lorcana.gg/images/cards/001_001.png",
-                "price": 18.75,
-                "quantity": 12,
-                "rarity": "Common"
+                "name": "Olaf - Happy Passenger",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/561994_in_1000x1000.jpg",
+                "price": 6.50,
+                "quantity": 15,
+                "rarity": "Uncommon"
             }
         ]
     },
@@ -194,43 +194,43 @@
         "cards": [
             {
                 "id": 21,
-                "name": "Monkey D. Luffy",
-                "image": "https://onepiece.gg/cdn/cards/op01_001.png",
-                "price": 55.00,
+                "name": "Carrot",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/454522_in_1000x1000.jpg",
+                "price": 0.20,
                 "quantity": 8,
-                "rarity": "Leader"
+                "rarity": "Common"
             },
             {
                 "id": 22,
-                "name": "Roronoa Zoro",
-                "image": "https://onepiece.gg/cdn/cards/op01_004.png",
-                "price": 38.50,
+                "name": "Fukurokuju",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/454645_in_1000x1000.jpg",
+                "price": 0.15,
                 "quantity": 10,
-                "rarity": "Super Rare"
+                "rarity": "Common"
             },
             {
                 "id": 23,
-                "name": "Nami",
-                "image": "https://onepiece.gg/cdn/cards/op01_007.png",
-                "price": 22.99,
+                "name": "Sasaki",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/454636_in_1000x1000.jpg",
+                "price": 0.15,
                 "quantity": 14,
-                "rarity": "Rare"
+                "rarity": "Common"
             },
             {
                 "id": 24,
-                "name": "Trafalgar Law",
-                "image": "https://onepiece.gg/cdn/cards/op02_001.png",
-                "price": 47.75,
-                "quantity": 6,
-                "rarity": "Super Rare"
+                "name": "Gordon",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/454526_in_1000x1000.jpg",
+                "price": 18.50,
+                "quantity": 10,
+                "rarity": "Promo"
             },
             {
                 "id": 25,
-                "name": "Portgas D. Ace",
-                "image": "https://onepiece.gg/cdn/cards/op03_045.png",
-                "price": 72.00,
-                "quantity": 3,
-                "rarity": "Secret Rare"
+                "name": "Kaido",
+                "image": "https://tcgplayer-cdn.tcgplayer.com/product/454627_in_1000x1000.jpg",
+                "price": 4.50,
+                "quantity": 30,
+                "rarity": "Super Rare"
             }
         ]
     },
@@ -240,44 +240,44 @@
         "icon": "../media/categories/digimon.png",
         "cards": [
             {
-                "id": 26,
-                "name": "Omnimon",
-                "image": "https://digimoncard.io/images/cards/BT5_086_JP.jpg",
-                "price": 95.00,
-                "quantity": 2,
-                "rarity": "Mega"
-            },
-            {
-                "id": 27,
-                "name": "Gallantmon",
-                "image": "https://digimoncard.io/images/cards/BT6_088_JP.jpg",
-                "price": 40.25,
-                "quantity": 7,
-                "rarity": "Mega"
-            },
-            {
-                "id": 28,
-                "name": "WarGreymon",
-                "image": "https://digimoncard.io/images/cards/BT8_019_JP.jpg",
-                "price": 52.99,
-                "quantity": 5,
-                "rarity": "Mega"
-            },
-            {
-                "id": 29,
-                "name": "MetalGarurumon",
-                "image": "https://digimoncard.io/images/cards/BT8_020_JP.jpg",
-                "price": 48.75,
-                "quantity": 6,
-                "rarity": "Mega"
-            },
-            {
-                "id": 30,
+                "id": 31,
                 "name": "Agumon",
-                "image": "https://digimoncard.io/images/cards/BT10_001_JP.jpg",
-                "price": 12.50,
-                "quantity": 18,
-                "rarity": "Rookie"
+                "image": "https://images.digimoncard.io/images/cards/BT1-010.jpg",
+                "price": 0.50,
+                "quantity": 25,
+                "rarity": "Uncommon"
+            },
+            {
+                "id": 32,
+                "name": "Gabumon",
+                "image": "https://images.digimoncard.io/images/cards/BT1-029.jpg",
+                "price": 0.45,
+                "quantity": 20,
+                "rarity": "Uncommon"
+            },
+            {
+                "id": 33,
+                "name": "Omegamon (Omnimon)",
+                "image": "https://images.digimoncard.io/images/cards/BT1-084.jpg",
+                "price": 45.00,
+                "quantity": 3,
+                "rarity": "Super Rare"
+            },
+            {
+                "id": 34,
+                "name": "Beelzemon",
+                "image": "https://images.digimoncard.io/images/cards/ST14-08.jpg",
+                "price": 12.00,
+                "quantity": 5,
+                "rarity": "Super Rare"
+            },
+            {
+                "id": 35,
+                "name": "Magnamon (X Antibody)",
+                "image": "https://images.digimoncard.io/images/cards/BT16-102.jpg",
+                "price": 65.00,
+                "quantity": 2,
+                "rarity": "Secret Rare"
             }
         ]
     },
@@ -289,7 +289,7 @@
             {
                 "id": 31,
                 "name": "Son Goku (Awakened Pulse)",
-                "image": "https://limitlesstcg.s3.amazonaws.com/db-cards/FB01/FB01-015.png",
+                "image": "https://www.cardtrader.com/uploads/blueprints/image/278340/show_son-goku-alternate-art-fusion-world-awakened-pulse.jpg",
                 "price": 225.00,
                 "quantity": 2,
                 "rarity": "Secret Rare"
@@ -297,15 +297,15 @@
             {
                 "id": 32,
                 "name": "Vegeta, Prince of Speed",
-                "image": "https://limitlesstcg.s3.amazonaws.com/db-cards/FB01/FB01-036.png",
+                "image": "https://www.cardtrader.com/uploads/blueprints/image/181178/show_vegeta-prince-of-speed-starter-deck-the-awakening.jpg",
                 "price": 45.00,
                 "quantity": 5,
                 "rarity": "Super Rare"
             },
             {
                 "id": 33,
-                "name": "Frieza, Golden Emperor",
-                "image": "https://limitlesstcg.s3.amazonaws.com/db-cards/FB01/FB01-076.png",
+                "name": "Frieza",
+                "image": "https://www.cardtrader.com/uploads/blueprints/image/357544/show_frieza-fusion-world-manga-booster-02-357544.jpg",
                 "price": 38.00,
                 "quantity": 4,
                 "rarity": "Super Rare"
@@ -313,7 +313,7 @@
             {
                 "id": 34,
                 "name": "Broly: BR",
-                "image": "https://limitlesstcg.s3.amazonaws.com/db-cards/FB01/FB01-120.png",
+                "image": "https://www.cardtrader.com/uploads/blueprints/image/347463/show_broly-br-fusion-world-wish-for-shenron.jpg",
                 "price": 55.00,
                 "quantity": 3,
                 "rarity": "Super Rare"
@@ -321,7 +321,7 @@
             {
                 "id": 35,
                 "name": "Son Gohan: Childhood",
-                "image": "https://limitlesstcg.s3.amazonaws.com/db-cards/FB01/FB01-084.png",
+                "image": "https://www.cardtrader.com/uploads/blueprints/image/363585/show_son-gohan-childhood-fusion-world-saiyan-s-pride-pre-release.jpg",
                 "price": 12.50,
                 "quantity": 8,
                 "rarity": "Rare"
@@ -336,7 +336,7 @@
             {
                 "id": 36,
                 "name": "Kai'Sa, Daughter of the Void",
-                "image": "https://riftbound.com/images/cards/kaisa_signature.png",
+                "image": "https://storage.googleapis.com/images.pricecharting.com/7j4ccdi2rtczspyi/1600.jpg",
                 "price": 1547.00,
                 "quantity": 1,
                 "rarity": "Signature Rare"
@@ -344,7 +344,7 @@
             {
                 "id": 37,
                 "name": "Lee Sin, Blind Monk",
-                "image": "https://riftbound.com/images/cards/leesin_overnumbered.png",
+                "image": "https://storage.googleapis.com/images.pricecharting.com/2hwzdcjevnnyqvbz/1600.jpg",
                 "price": 200.00,
                 "quantity": 2,
                 "rarity": "Overnumbered"
@@ -352,7 +352,7 @@
             {
                 "id": 38,
                 "name": "Ahri, Nine-Tailed Fox",
-                "image": "https://riftbound.com/images/cards/ahri_overnumbered.png",
+                "image": "https://storage.googleapis.com/images.pricecharting.com/n6l6rxc3hutsylki/1600.jpg",
                 "price": 146.00,
                 "quantity": 3,
                 "rarity": "Overnumbered"
@@ -360,7 +360,7 @@
             {
                 "id": 39,
                 "name": "Darius, Hand of Noxus",
-                "image": "https://riftbound.com/images/cards/darius_showcase.png",
+                "image": "https://storage.googleapis.com/images.pricecharting.com/qnilqhx5yrfvlot7/1600.jpg",
                 "price": 550.00,
                 "quantity": 1,
                 "rarity": "Showcase"
@@ -368,7 +368,7 @@
             {
                 "id": 40,
                 "name": "Viktor, Herald of the Arcane",
-                "image": "https://riftbound.com/images/cards/viktor_signature.png",
+                "image": "https://storage.googleapis.com/images.pricecharting.com/x4226lu3kq7rq3yb/1600.jpg",
                 "price": 575.00,
                 "quantity": 2,
                 "rarity": "Signature Rare"

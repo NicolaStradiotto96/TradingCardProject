@@ -3,7 +3,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // CARDS
     fetch("./data/cards.json").then((response) => response.json()).then((data) => {
         // CREATE CARDS
-        const pokemonCards = data[0].cards;
+        const categoryMap = {
+            "pokemon": 0,
+            "magic": 1,
+            "yugioh": 2,
+            "lorcana": 3,
+            "onepiece": 4,
+            "digimon": 5,
+            "dragonball": 6,
+            "riftbound": 7
+        };
+
+        const path = window.location.pathname.toLowerCase();
+        const categoryKey = Object.keys(categoryMap).find(key => path.includes(key));
+
+        let cardsCategory = categoryKey != undefined ? data[categoryMap[categoryKey]].cards : [];
+
+        const categoryTitle = document.querySelector(".category-title");
+
+        if (categoryKey != undefined) {
+            categoryTitle.textContent = `
+                ${data[categoryMap[categoryKey]].name}
+            `
+        }
 
         const categoriesWrapper = document.querySelector("#categories-wrapper");
 
@@ -15,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 div.innerHTML = `
                     <img class="card-img-top" src="${card.image}" alt="Card image">
                     <div class="card-body card-border bg-p d-flex flex-column justify-content-center align-items-center border">
-                        <h5 class="card-title color-s">${card.name}</h5>
+                        <h5 class="card-title color-s text-center tooltip-container px-1" data-tooltip="${card.name}">${card.name}</h5>
                         <p class="card-text m-0 color-s">${card.rarity}</p>
                         <p class="card-text m-0 color-s">${card.price.toFixed(2)}€</p>
                     ${card.quantity == 0
@@ -32,13 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        createCards(pokemonCards);
+        createCards(cardsCategory);
 
         // PRICE FILTER
         let priceLabel = document.querySelector("#price-label");
         let priceFilter = document.querySelector("#price-filter");
 
-        const prices = pokemonCards.map(card => card.price);
+        const prices = cardsCategory.map(card => card.price);
 
         let minPrice = Math.ceil(Math.min(...prices));
         let maxPrice = Math.ceil(Math.max(...prices));
@@ -97,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         function globalFilter() {
             categoriesWrapper.innerHTML = "";
 
-            let filteredPrice = priceFilterCards(pokemonCards);
+            let filteredPrice = priceFilterCards(cardsCategory);
             let filteredWord = wordFilterCards(filteredPrice);
             let filteredAvailable = availableFilterCards(filteredWord);
 
