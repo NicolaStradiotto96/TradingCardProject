@@ -29,6 +29,6 @@ The goal is to create a safe, fast, and engaging marketplace for collectors and 
 - Titles: font-family: "Audiowide", sans-serif;
 - Text: font-family: "Rubik", sans-serif;
 
-- ## DEVELOPER
+## DEVELOPER
 
 - [Nicola Stradiotto](https://github.com/NicolaStradiotto96)
